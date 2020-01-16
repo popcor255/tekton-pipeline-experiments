@@ -1,11 +1,11 @@
 apiVersion: tekton.dev/v1alpha1
 kind: TaskRun
 metadata:
-  name: build-docker-image-from-git-source-task-run
+  name: build-docker-image-from-git-source-task-run-java
 spec:
   serviceAccountName: tutorial-service
   taskRef:
-    name: build-docker-image-from-git-source
+    name: build-docker-image-from-git-source-java
   inputs:
     resources:
       - name: docker-source

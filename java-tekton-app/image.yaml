@@ -1,9 +1,9 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
-  name: skaffold-image-leeroy-web
+  name: skaffold-image-leeroy-web-java
 spec:
   type: image
   params:
     - name: url
-      value: index.docker.io/REPLACEME/cloudnative_sample_app
+      value: index.docker.io/popcor255/cloudnative_sample_app
